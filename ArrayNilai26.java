@@ -9,18 +9,11 @@ public class ArrayNilai26 {
             System.out.print("Masukkan nilai mahasiswa ke-" + (i + 1) + ": ");
             nilaiAkhir[i] = input.nextInt();
         }
-        int lulus = 0, tidakLulus = 0;
         for (int i = 0; i < nilaiAkhir.length; i++) {
-            String status = (nilaiAkhir[i] > 70) ? "LULUS" : "TIDAK LULUS";
-            System.out.println("Mahasiswa ke-" + (i + 1) + ": " + nilaiAkhir[i] + " (" + status + ")");
             if (nilaiAkhir[i] > 70){
-                lulus++;
-            }else{
-                tidakLulus++;
+                System.out.println("Mahasiswa ke-" + (i + 1) + ": " + nilaiAkhir[i] + "(LUUS)");
             }
-            
         }
-        System.out.println("jumlah mahasiswa yang lulus:" + lulus);
-        System.out.println("jumlah mahasiswa yang tidak lulus" + tidakLulus);
+       
     }
 }
