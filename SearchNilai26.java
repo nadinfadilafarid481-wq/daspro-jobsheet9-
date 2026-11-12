@@ -22,7 +22,9 @@ public class SearchNilai26 {
             }
         }
         if (!ditemukan) {
-            System.out.println("Nilai yang di cari" + key + " tidak ditemukan.");
+            System.out.println("pencarian gagal");
+            System.out.println("Nilai" + key + " tidak ditemukan.");
+            System.out.println("periksa kembali niai yang ingin anda masukkan");
         }
     }
 }
